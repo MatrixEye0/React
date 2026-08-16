@@ -1,5 +1,5 @@
 import './App.css';
-import { Button, LoginButton, age } from "./button";
+import { Button, LoginButton, Boot } from "./button";
 
 function App(){
 
@@ -11,6 +11,7 @@ function App(){
     <h1> {name} you are best Developer ❤️ {number()}</h1>
          <Button> </Button>
          <LoginButton></LoginButton>
+         <Boot> </Boot>
   </div>
 }
 export default App;
