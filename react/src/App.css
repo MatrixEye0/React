@@ -1,0 +1,27 @@
+h1 {
+  color: rgb(24, 21, 21);
+  text-align: center;
+  font-size: 130px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+Button {
+  background: linear-gradient(135deg, #6a5af9, #8f5cff);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(106, 90, 249, 0.4);
+  transition: all 0.3s ease;
+}
+
+Button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(106, 90, 249, 0.6);
+}
+
+Button:active {
+  transform: scale(0.95);
+}
