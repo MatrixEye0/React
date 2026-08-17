@@ -1,5 +1,6 @@
 import './App.css';
 import { Button, LoginButton, Boot } from "./button";
+import Fragment from './fragments';
 
 function App(){
 
@@ -12,6 +13,7 @@ function App(){
          <Button> </Button>
          <LoginButton></LoginButton>
          <Boot> </Boot>
+         <Fragment> </Fragment>
   </div>
 }
 export default App;
