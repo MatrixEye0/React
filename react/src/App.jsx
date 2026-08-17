@@ -5,7 +5,7 @@ import ListbyArr from './map';
 import Props from './props';
 
 function App(){
-  let icc = ["Aus","IND","SA","NZ","Eng"]
+  let icc = ["Australia","India","South Africa","New Zeland","England","USA","Canada","Neatherland","West Indies","Ireland","France","Germany","Spain","Sri Lanka","Pakistan","Afghanistan","Bangladesh","Nepal","Italy","Brazil","Argentina","Russia","Japan","South Korea","China","Indonesia","Israel","Iran","UAE","Oman","Greece","Portugal","Turkey","Colombia"]
   
   let name ="JAGJIT SINGH"
   let number=()=>{

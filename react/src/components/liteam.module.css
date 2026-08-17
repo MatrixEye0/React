@@ -1,0 +1,10 @@
+/*use for give class to specific element which name maybe same in other file so css module give it unique id so element name same but style not apply to all only apply to which i want 
+this thype file define by exact filename . module.css*/
+
+.list{
+    background-color: rgb(240, 178, 98);
+}
+.fnt{
+    font-size: large;
+    font-weight: 700;
+}
