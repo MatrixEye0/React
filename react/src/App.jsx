@@ -1,6 +1,7 @@
 import './App.css';
 import { Button, LoginButton, Boot } from "./button";
 import Fragment from './fragments';
+import ListbyArr from './map';
 
 function App(){
 
@@ -14,6 +15,7 @@ function App(){
          <LoginButton></LoginButton>
          <Boot> </Boot>
          <Fragment> </Fragment>
+         <ListbyArr></ListbyArr>
   </div>
 }
 export default App;

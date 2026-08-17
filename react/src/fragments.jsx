@@ -8,10 +8,6 @@ export default function Fragment(){// div lagane se load ke time extra div load 
      <h1> Fragments</h1>
     <ul class="list-group">
      <li class="list-group-item list-group-item-action">An item</li>
-     <li class="list-group-item list-group-item-action">A second item</li>
-     <li class="list-group-item list-group-item-action">A third item</li>
-     <li class="list-group-item list-group-item-action">A fourth item</li>
-     <li class="list-group-item list-group-item-action">And a fifth one</li>
    </ul>
  </React.Fragment>
     );
