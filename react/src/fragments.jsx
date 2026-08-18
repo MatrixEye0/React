@@ -6,8 +6,8 @@ export default function Fragment(){// div lagane se load ke time extra div load 
     return (
  <React.Fragment> {/* use <> </> this also work same as react.fragment*/}
      <h1> Fragments</h1>
-    <ul class="list-group">
-     <li class="list-group-item list-group-item-action">An item</li>
+       <ul class="list-group">
+      <li class="list-group-item list-group-item-action">An item</li>
    </ul>
  </React.Fragment>
     );

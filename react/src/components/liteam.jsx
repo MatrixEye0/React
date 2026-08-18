@@ -5,7 +5,7 @@ const Team = ({ arr }) => { // className declare like this because we use module
     return (
         <li className={`list-group-item list-group-item-action ${styles.list} ${styles.fnt}`}>
             {arr}
-        </li>
+        </li>        
     );
 };
 export default Team;

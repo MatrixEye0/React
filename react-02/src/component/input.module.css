@@ -1,0 +1,50 @@
+.inputBox {
+  width: 500px;
+  margin: 30px auto;
+}
+
+.inputBox label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inputRow {
+  display: flex;
+  gap: 10px;
+}
+
+.inputRow input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputRow input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.25);
+}
+
+.inputRow input::placeholder {
+  color: #999;
+}
+
+.inputRow button {
+  padding: 0 25px;
+  border: none;
+  border-radius: 12px;
+  background: #6c63ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inputRow button:hover {
+  background: #574fd6;
+}

@@ -3,22 +3,40 @@ import { Button, LoginButton, Boot } from "./button";
 import Fragment from './fragments';
 import ListbyArr from './map';
 import Props from './props';
+import Container from './components/container';
 
 function App(){
-  let icc = ["Australia","India","South Africa","New Zeland","England","USA","Canada","Neatherland","West Indies","Ireland","France","Germany","Spain","Sri Lanka","Pakistan","Afghanistan","Bangladesh","Nepal","Italy","Brazil","Argentina","Russia","Japan","South Korea","China","Indonesia","Israel","Iran","UAE","Oman","Greece","Portugal","Turkey","Colombia"]
+  let icc = ["Australia","India","South Africa","New Zeland","England"]
   
   let name ="JAGJIT SINGH"
   let number=()=>{
     return 22;
   }
-  return <div>
-    <h1> {name} you are best Developer ❤️ {number()}</h1>
+
+  // <>...</> is a React Fragment. It allows multiple elements to be returned without creating another <div>.
+
+  return(
+       
+    <>
+         <Container>
+        <h1> {name} you are best Developer ❤️ {number()}</h1> 
          <Button> </Button>
          <LoginButton></LoginButton>
-         <Boot> </Boot>
+          </Container>
+          <Container>
+            <Boot> </Boot>
          <Fragment> </Fragment>
-         <ListbyArr></ListbyArr>
-         <Props tm ={icc}></Props> {/*arr pass value here  tm is became prop*/}
-  </div>
+             </Container>
+         
+         <Container>
+          <ListbyArr></ListbyArr>
+          </Container>
+
+          <Container>
+             <Props tm ={icc}></Props> {/*arr pass value here  tm is became prop*/}
+           </Container>
+    </>
+  );
+    
 }
 export default App;
