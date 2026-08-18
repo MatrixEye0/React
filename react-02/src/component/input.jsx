@@ -9,6 +9,7 @@ const Input = ({addItem}) => {
 // 1.data that change over time.it is local and private component . it change because component to re-render.
 // 2. for function use useState hook .function star with use called hooks .hook only used inside component .parent pass state down to children via props.
 // 3. lifting state up: share state b/w components by moving it to their closest common ansestor.
+// 4.useState is a React Hook used to store data inside a component and update the UI when that data changes.
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   const handel = (event) => {
