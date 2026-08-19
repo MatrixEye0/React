@@ -12,7 +12,7 @@ function App() {
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
     if (number) str += "0123456789"
-    if (char) str += "!@#$%^&*(){}<>:~`,.;'[]"
+    if (char) str += "!@#$%^&*"
 
     for (let i = 1; i <= length; i++) {
       let char = Math.floor(Math.random() * str.length)
@@ -52,7 +52,7 @@ function App() {
               min="6"
               max="30"
               value={length}
-              onChange={(prev) => !prev}
+              onChange={(e)=> setLength(e.target.value)}
               className="w-full cursor-pointer" />
           </div>
 
@@ -62,14 +62,14 @@ function App() {
               <input
                 type="checkbox"
                 checked={number}
-                onChange={(e) => !e}
+                onChange={(e) => setNumber(e.target.checked)}
                 className="w-4 h-4"/> Numbers </label>
 
             <label className="flex items-center gap-2 cursor-pointer">
               <input
                 type="checkbox"
                 checked={char}
-                onChange={(e) => !e}
+                onChange={(e) => setChar(e.target.checked)}
                 className="w-4 h-4"/> Characters </label>
           </div>
 
