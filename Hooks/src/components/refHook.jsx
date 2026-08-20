@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from "react";
 function RefHook() {
     const [count, setCount] = useState(0);
     const a = useRef(0); // in rerender this value not change but when we use useState and useEffect they render every time so count 1 rerender and became 0 again. a value persite due to useRef.
-    const inputRef = useRef(); // we access DOM value by use of this. useRef returns an object with a single property:
+    const inputRef = useRef(); // we access DOM value by use of this. useRef returns an object with a single property: 
     const handleClick = () => {
         setCount(count + 1);
     };
