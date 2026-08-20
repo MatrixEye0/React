@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import './App.css'
 import Fetch from './components/axios'
+import RefHook from './components/refHook'
 
 function App() {
   const [length, setLength] = useState(8)
@@ -103,6 +104,7 @@ function App() {
         </h2>
 
         <Fetch />
+        <RefHook/>
       </div>
     </div>
   </div>
