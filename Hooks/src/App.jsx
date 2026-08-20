@@ -2,6 +2,8 @@ import { useState, useCallback } from 'react'
 import './App.css'
 import Fetch from './components/axios'
 import RefHook from './components/refHook'
+import Memo from './components/memoHook'
+
 
 function App() {
   const [length, setLength] = useState(8)
@@ -60,7 +62,7 @@ function App() {
           <input
             type="range"
             min="6"
-            max="30"
+            max="100"
             value={length}
             onChange={(e) => setLength(Number(e.target.value))}
             className="w-full cursor-pointer" />
@@ -106,6 +108,7 @@ function App() {
         <Fetch />
         <RefHook/>
       </div>
+      <Memo/>
     </div>
   </div>
 </>
