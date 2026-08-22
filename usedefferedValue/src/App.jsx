@@ -27,14 +27,14 @@ function App() {
   return (
     <>
       <input onInput={handel} placeholder="search"/>
-      {[...new Array(50)].map((_, i)=> { return <MemoizedSearchText key={i} text={deffer}/> })}
+      {[...new Array(5000)].map((_, i)=> { return <MemoizedSearchText key={i} text={deffer}/> })}
     </>
   );
 }
 
  function SearchText({text}){
     let i=0;
-    while(i<10000000){
+    while(i<1000000){
       i++;
     }
     return <h2> Search : {text}</h2>
