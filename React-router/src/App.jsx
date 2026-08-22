@@ -24,6 +24,10 @@ Renders component   */
 // creatBrowserRouter create the routing configuration for your React application.
   const router = createBrowserRouter([
     {
+      path: "/",
+      element:  <> <Nav /> <Home /> </>  
+    },
+    {
       path: "/home",
       element:  <> <Nav /> <Home /> </>  
     },
