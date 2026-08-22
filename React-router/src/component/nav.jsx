@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import {Search} from './search.jsx'
 
 export const Nav = () => {
 // replace a with link in list and to in place of href. they convert in ancor tag in runtime
@@ -13,6 +14,7 @@ export const Nav = () => {
           <NavLink className={(e)=>{return e.isActive?"Red":""}}  to="/about"><li>About</li></NavLink>
           <NavLink  className={(e)=>{return e.isActive?"Red":""}} to="/login"><li>Login</li></NavLink>
         </nav>
+        <Search/>
     </div>
   )
 }
