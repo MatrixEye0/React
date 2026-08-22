@@ -10,6 +10,7 @@ function App() {
   const [number, setNumber] = useState(false)
   const [char, setChar] = useState(false)
   const [password, setPass] = useState("")
+  
 
   const passGenrate = useCallback(() => { //useCallback freez the function and not re render agar depedence triger hogi tabhi unfreez hoga.
     let pass = ""
