@@ -5,6 +5,8 @@ import { About } from './component/About'
 import { Nav } from './component/nav'
 import { Home } from './component/Home'
 import { User } from './component/User'
+import { Dashbord } from './component/dashbord'
+import ProtectedRoute from './privateRoute'
 
 function App() {
    /*
@@ -26,6 +28,10 @@ Renders component   */
     {
       path: "/",
       element:  <> <Nav /> <Home /> </>  
+    },
+     {
+      path: "/dashbord",
+      element:  <ProtectedRoute> <Nav /> <Dashbord /> </ProtectedRoute>  
     },
     {
       path: "/home",

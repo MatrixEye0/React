@@ -13,6 +13,7 @@ export const Nav = () => {
           <NavLink className={(e)=>{return e.isActive?"Red":""}} to="/home"><li>Home</li></NavLink>
           <NavLink className={(e)=>{return e.isActive?"Red":""}}  to="/about"><li>About</li></NavLink>
           <NavLink  className={(e)=>{return e.isActive?"Red":""}} to="/login"><li>Login</li></NavLink>
+          <NavLink  className={(e)=>{return e.isActive?"Red":""}} to="/dashbord"><li>Dashbord</li></NavLink>
         </nav>
         <Search/>
     </div>
