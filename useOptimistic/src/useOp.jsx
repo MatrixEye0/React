@@ -1,4 +1,4 @@
-import { useOptimistic, useState } from "react";
+import { useOptimistic, useState, useTransition } from "react";
 
 export default function Use(){
     const[task,setTask] = useState([]);
@@ -30,12 +30,13 @@ export default function Use(){
       const data = await response.json();
       setTask((previous)=>[...previous,{...data,title:newTask.title}]);
     }
-
+    
     return(
         <>
         <form action={add}>
             <input name="text" type="text" placeholder="Enter"/>
             <button type="submit">Add Task</button>
+            
         </form>
         <ul>
            {fastTask.map((item) => (
