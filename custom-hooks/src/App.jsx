@@ -4,17 +4,14 @@ import useCurrencyInfo from "./customHooks/useCurrency";
 import "./App.css";
 
 function App() {
-  const [amount, setAmount] = useState(0);
-
-  const [from, setFrom] = useState("USD");
-
-  const [to, setTo] = useState("INR");
+  const [amount, setAmount] = useState("");
+  const [from, setFrom] = useState("usd");
+  const [to, setTo] = useState("inr");
 
   const [convertedAmount, setConvertedAmount] = useState(0);
 
   // Custom Hook
   const currencyInfo = useCurrencyInfo(from);
-
   const options = Object.keys(currencyInfo);
 
   const swap = () => {
@@ -43,7 +40,6 @@ function App() {
             }}
           >
 
-            {/* FROM */}
             <div className="w-full mb-1">
 
               <InputBox
@@ -60,9 +56,6 @@ function App() {
               />
 
             </div>
-
-
-            {/* SWAP */}
             <div className="relative w-full h-0.5">
 
               <button
@@ -76,7 +69,7 @@ function App() {
             </div>
 
 
-            {/* TO */}
+       
             <div className="w-full mt-1 mb-4">
 
               <InputBox
