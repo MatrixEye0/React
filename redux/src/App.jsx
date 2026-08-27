@@ -7,8 +7,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment } from './features/counter/counterslice'
 
 function App() {
-  const count = useSelector((state)=> state.counter.value)
-  const dispatch = useDispatch() // help of useDispatch we call function from slice 
+  const count = useSelector((state)=> state.counter.value) // useSelector Redux Store se data read karna.
+  const dispatch = useDispatch() // help of useDispatch we call function from slice . Action ko Redux Store tak bhejna.
 
   function handelIncrementClick(){
        dispatch(increment());
@@ -27,3 +27,5 @@ function App() {
 }
 
 export default App
+
+// slice export to -> store -> main.jsx -> app.jsx

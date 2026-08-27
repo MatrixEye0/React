@@ -7,7 +7,7 @@ import store from './app/store'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Provider store={store}>
+    <Provider store={store}> Provider → Redux ko React se connect karna
       <App/>
     </Provider>
   </StrictMode>,
